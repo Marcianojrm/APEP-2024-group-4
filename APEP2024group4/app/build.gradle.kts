@@ -1,3 +1,5 @@
+import org.gradle.model.internal.typeregistration.InstanceFactory.ImplementationInfo
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -15,7 +17,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures{
+        viewBinding = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -29,6 +33,12 @@ android {
 }
 
 dependencies {
+
+    dependencies {
+        val room_version = "2.6.1"
+        implementation ("androidx.room:room-runtime:$room_version")
+        annotationProcessor ("androidx.room:room-compiler:$room_version")
+    }
 
     implementation(libs.appcompat)
     implementation(libs.material)

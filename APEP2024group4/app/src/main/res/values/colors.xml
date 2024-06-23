@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#00796B</color> <!-- Teal color -->
+    <color name="colorPrimaryDark">#004D40</color> <!-- Darker teal color -->
+    <color name="colorAccent">#FF4081</color> <!-- Accent color (Pink) -->
+    <color name="buttonNormal">#00796B</color> <!-- Normal button color -->
+    <color name="buttonPressed">#004D40</color> <!-- Pressed button color -->
+    <color name="buttonText">#FFFFFF</color> <!-- Button text color -->
 </resources>
